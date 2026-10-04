@@ -1,6 +1,0 @@
-{
-  "name": "Entrenador Personal - Plantilla Premium & Portal de Clientes",
-  "description": "Landing page y ecosistema digital profesional para entrenadores personales: reservas en tiempo real, seguimiento de rutinas, nutrición, videos y portal de clientes.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
