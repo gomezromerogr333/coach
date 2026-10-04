@@ -12,7 +12,7 @@ export const VideoSpotlight: React.FC<VideoSpotlightProps> = ({ config }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="bg-[#0A0910] text-white py-20 sm:py-28 relative overflow-hidden border-t border-white/10">
+    <section className="bg-[#0A0910] text-white py-16 sm:py-24 lg:py-28 relative overflow-hidden border-t border-white/10">
       {/* Background radial glows */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-radial from-[#2FB6FF]/15 to-transparent blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-radial from-[#C24CE0]/15 to-transparent blur-3xl pointer-events-none" />
@@ -23,7 +23,7 @@ export const VideoSpotlight: React.FC<VideoSpotlightProps> = ({ config }) => {
           Acompañamiento real
         </div>
 
-        <h2 className="font-display font-semibold text-3xl sm:text-4xl lg:text-[42px] tracking-tight leading-tight max-w-[700px] text-white">
+        <h2 className="font-display font-semibold text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-[42px] tracking-tight max-w-[700px] text-white">
           Tu coach no te deja solo con una lista fría de ejercicios.
         </h2>
 

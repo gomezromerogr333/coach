@@ -14,7 +14,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ config, onBookClick }) => {
   };
 
   return (
-    <section className="bg-[#0A0910] text-white py-24 sm:py-32 relative text-center overflow-hidden border-t border-white/10">
+    <section className="bg-[#0A0910] text-white py-20 sm:py-28 lg:py-32 relative text-center overflow-hidden border-t border-white/10">
       <div className="absolute inset-0 bg-radial from-[#9B5CFF]/20 via-transparent to-transparent blur-3xl pointer-events-none" />
 
       <div className="max-w-[760px] mx-auto px-5 sm:px-7 relative z-10">
@@ -22,7 +22,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ config, onBookClick }) => {
           Siguiente paso
         </div>
 
-        <h2 className="font-display font-semibold text-3xl sm:text-5xl lg:text-[54px] tracking-tight leading-[1.1] text-white">
+        <h2 className="font-display font-semibold text-[1.9rem] sm:text-5xl lg:text-[54px] tracking-tight leading-[1.1] text-white">
           Cuéntale a tu coach cuál es tu objetivo real.
         </h2>
 

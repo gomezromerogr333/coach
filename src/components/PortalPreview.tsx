@@ -148,14 +148,14 @@ export const PortalPreview: React.FC<PortalPreviewProps> = ({ config }) => {
   const tabIndex = TAB_CONFIGS.findIndex((t) => t.key === activeTab);
 
   return (
-    <section id="portal" className="bg-[#F5F6FA] text-[#12141B] py-20 sm:py-28 relative overflow-hidden">
+    <section id="portal" className="bg-[#F5F6FA] text-[#12141B] py-16 sm:py-24 lg:py-28 relative overflow-hidden">
       <div className="max-w-[1180px] mx-auto px-5 sm:px-7">
         <div className="font-mono text-xs tracking-wider uppercase text-[#7A47D6] mb-4 flex items-center gap-2.5 font-semibold">
           <span className="w-5 h-[1.5px] bg-[#7A47D6]" />
           Por dentro
         </div>
 
-        <h2 className="font-display font-semibold text-3xl sm:text-4xl lg:text-[42px] tracking-tight leading-tight max-w-[680px] text-[#12141B]">
+        <h2 className="font-display font-semibold text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-[42px] tracking-tight max-w-[680px] text-[#12141B]">
           Así se organiza tu semana de entrenamiento, nutrición y seguimiento.
         </h2>
 

@@ -9,7 +9,7 @@ interface TestimonialsProps {
 
 export const Testimonials: React.FC<TestimonialsProps> = ({ config }) => {
   return (
-    <section id="testimonios" className="bg-[#0A0910] text-white py-20 sm:py-28 relative overflow-hidden border-t border-white/10">
+    <section id="testimonios" className="bg-[#0A0910] text-white py-16 sm:py-24 lg:py-28 relative overflow-hidden border-t border-white/10">
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-radial from-[#9B5CFF]/15 to-transparent blur-3xl pointer-events-none" />
 
       <div className="max-w-[1180px] mx-auto px-5 sm:px-7 relative z-10">
@@ -20,7 +20,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ config }) => {
               Testimonios de clientes
             </div>
 
-            <h2 className="font-display font-semibold text-3xl sm:text-4xl lg:text-[42px] tracking-tight leading-tight max-w-[620px] text-white">
+            <h2 className="font-display font-semibold text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-[42px] tracking-tight max-w-[620px] text-white">
               Resultados reales de personas con vidas y rutinas reales.
             </h2>
           </div>
@@ -52,8 +52,9 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ config }) => {
                   <div className="text-sm font-bold text-white tracking-tight">
                     {t.name}
                   </div>
-                  <div className="text-xs font-mono text-white/40">
-                    {t.role} · {t.since}
+                  <div className="text-xs font-mono text-white/50 leading-snug">
+                    <span className="block">{t.role}</span>
+                    <span className="block text-white/40">{t.since}</span>
                   </div>
                 </div>
               </div>
