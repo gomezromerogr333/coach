@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Instrument Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --color-ink: #0A0910;
+  --color-ink-soft: rgba(255, 255, 255, 0.64);
+  --color-ink-faint: rgba(255, 255, 255, 0.4);
+  --color-glow-blue: #2FB6FF;
+  --color-glow-violet: #9B5CFF;
+  --color-glow-magenta: #C24CE0;
+  --color-line-dark: rgba(255, 255, 255, 0.12);
+}
+
+:root {
+  --ink: #0A0910;
+  --ink-soft: rgba(255, 255, 255, 0.64);
+  --ink-faint: rgba(255, 255, 255, 0.4);
+  --paper: #FFFFFF;
+  --glow-blue: #2FB6FF;
+  --glow-violet: #9B5CFF;
+  --glow-magenta: #C24CE0;
+  --line-dark: rgba(255, 255, 255, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--ink);
+  color: var(--paper);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Custom font utilities */
+.font-display {
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-rise-in {
+  animation: riseIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scrollbar refinement */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0910;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(155, 92, 255, 0.4);
+}
