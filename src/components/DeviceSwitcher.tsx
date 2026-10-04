@@ -15,7 +15,7 @@ export const DeviceSwitcher: React.FC<DeviceSwitcherProps> = ({
   windowWidth,
 }) => {
   return (
-    <aside aria-label="Selector de vista de dispositivo" className="fixed top-20 right-4 sm:right-6 z-40 flex items-center gap-1 bg-[#12141B]/90 backdrop-blur-md p-1.5 rounded-full border border-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all">
+    <aside aria-label="Selector de vista de dispositivo" className="hidden lg:flex fixed top-20 right-6 z-40 items-center gap-1 bg-[#12141B]/90 backdrop-blur-md p-1.5 rounded-full border border-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all">
       <button
         onClick={() => onChangeMode('auto')}
         className={`px-3 py-1.5 rounded-full text-xs font-mono font-medium flex items-center gap-1.5 transition-all cursor-pointer ${

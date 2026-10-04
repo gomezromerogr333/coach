@@ -67,9 +67,25 @@ export const PortalPreview: React.FC<PortalPreviewProps> = ({ config }) => {
   const phoneRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
 
-  // Tab auto-play timer (2.6s per tab)
+  // Solo avanza solo cuando la sección está a la vista y el usuario no pidió menos movimiento
+  const [inView, setInView] = useState(false);
+  const reducedMotion =
+    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   useEffect(() => {
-    if (isPaused) return;
+    const el = stageRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') {
+      setInView(true);
+      return;
+    }
+    const io = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.25 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  // Tab auto-play timer (2.8s per tab)
+  useEffect(() => {
+    if (isPaused || !inView || reducedMotion) return;
 
     const timer = setInterval(() => {
       setActiveTab((prev) => {
@@ -80,7 +96,7 @@ export const PortalPreview: React.FC<PortalPreviewProps> = ({ config }) => {
     }, 2800);
 
     return () => clearInterval(timer);
-  }, [isPaused]);
+  }, [isPaused, inView, reducedMotion]);
 
   // Mouse tilt on phone
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -209,11 +225,9 @@ export const PortalPreview: React.FC<PortalPreviewProps> = ({ config }) => {
                   {isActive && (
                     <div className="absolute left-5 right-5 bottom-1 h-0.5 bg-[#EDEEF3] rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-[#7A47D6] to-[#2FB6FF] rounded-full"
-                        style={{
-                          width: isPaused ? '100%' : '100%',
-                          transition: isPaused ? 'none' : 'width 2.8s linear',
-                        }}
+                        key={activeTab}
+                        className={`h-full w-full bg-gradient-to-r from-[#7A47D6] to-[#2FB6FF] rounded-full ${reducedMotion ? '' : 'tab-progress-bar'}`}
+                        style={{ animationPlayState: isPaused || !inView ? 'paused' : 'running' }}
                       />
                     </div>
                   )}

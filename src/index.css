@@ -27,6 +27,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 76px; /* la barra fija no tapa el título al navegar por anclas */
+  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
   width: 100%;
 }
@@ -83,4 +85,25 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(155, 92, 255, 0.4);
+}
+
+/* Barra de progreso de la pestaña activa del portal (como en la v3) */
+@keyframes tabProgress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.tab-progress-bar {
+  transform-origin: left center;
+  animation: tabProgress 2800ms linear forwards;
+}
+
+/* Respeta la preferencia de movimiento reducido del sistema */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

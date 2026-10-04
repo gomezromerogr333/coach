@@ -73,7 +73,7 @@ export const VideoSpotlight: React.FC<VideoSpotlightProps> = ({ config }) => {
 
               <div className="mt-auto pt-3 border-t border-white/10 flex items-center justify-between text-xs text-white/40 font-mono">
                 <span>{item.coachNote.slice(0, 30)}...</span>
-                <span className="text-[#9B5CFF] font-semibold group-hover:translate-x-1 transition-transform">
+                <span className="shrink-0 whitespace-nowrap text-[#9B5CFF] font-semibold group-hover:translate-x-1 transition-transform">
                   Ver demo →
                 </span>
               </div>

@@ -7,7 +7,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ config }) => {
   return (
-    <footer className="bg-[#0A0910] border-t border-white/10 py-10 text-xs font-mono text-white/40">
+    <footer className="bg-[#0A0910] border-t border-white/10 pt-10 pb-[max(2.5rem,env(safe-area-inset-bottom))] text-xs font-mono text-white/40">
       <div className="max-w-[1180px] mx-auto px-5 sm:px-7 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2 text-white/70">
           <span className="w-1.5 h-1.5 rounded-full bg-[#9B5CFF]" />

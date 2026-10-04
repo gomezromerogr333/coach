@@ -37,8 +37,9 @@ export const Navbar: React.FC<NavbarProps> = ({ config, onOpenCustomizer, onBook
         <div className="flex items-center gap-2.5 sm:gap-3">
           <button
             onClick={onOpenCustomizer}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium text-white/70 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg transition-colors"
+            className="flex items-center justify-center gap-1.5 min-h-10 min-w-10 px-3 py-1.5 text-xs font-mono font-medium text-white/70 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg transition-colors"
             title="Personalizar datos de la plantilla"
+            aria-label="Personalizar datos de la plantilla"
           >
             <Settings className="w-3.5 h-3.5 text-[#9B5CFF]" />
             <span className="hidden sm:inline">Personalizar</span>
@@ -46,15 +47,16 @@ export const Navbar: React.FC<NavbarProps> = ({ config, onOpenCustomizer, onBook
 
           <button
             onClick={onBookClick}
-            className="px-4 py-2 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#9B5CFF] to-[#C24CE0] hover:brightness-110 rounded-xl transition-all shadow-[0_0_20px_rgba(155,92,255,0.3)] active:scale-95 whitespace-nowrap"
+            className="min-h-10 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#9B5CFF] to-[#C24CE0] hover:brightness-110 rounded-xl transition-all shadow-[0_0_20px_rgba(155,92,255,0.3)] active:scale-95 whitespace-nowrap"
           >
             Reservar sesión
           </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-white/70 hover:text-white md:hidden"
-            aria-label="Abrir menú"
+            className="min-h-10 min-w-10 flex items-center justify-center text-white/70 hover:text-white md:hidden"
+            aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -67,42 +69,42 @@ export const Navbar: React.FC<NavbarProps> = ({ config, onOpenCustomizer, onBook
           <a
             href="#como-funciona"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white/70 hover:text-white py-1 flex items-center justify-between"
+            className="text-white/70 hover:text-white py-3 flex items-center justify-between"
           >
             Cómo funciona <ArrowUpRight className="w-4 h-4 opacity-50" />
           </a>
           <a
             href="#agenda"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white/70 hover:text-white py-1 flex items-center justify-between"
+            className="text-white/70 hover:text-white py-3 flex items-center justify-between"
           >
             Agenda en vivo <ArrowUpRight className="w-4 h-4 opacity-50" />
           </a>
           <a
             href="#portal"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white/70 hover:text-white py-1 flex items-center justify-between"
+            className="text-white/70 hover:text-white py-3 flex items-center justify-between"
           >
             Portal por dentro <ArrowUpRight className="w-4 h-4 opacity-50" />
           </a>
           <a
             href="#planes"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white/70 hover:text-white py-1 flex items-center justify-between"
+            className="text-white/70 hover:text-white py-3 flex items-center justify-between"
           >
             Planes y tarifas <ArrowUpRight className="w-4 h-4 opacity-50" />
           </a>
           <a
             href="#testimonios"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white/70 hover:text-white py-1 flex items-center justify-between"
+            className="text-white/70 hover:text-white py-3 flex items-center justify-between"
           >
             Testimonios <ArrowUpRight className="w-4 h-4 opacity-50" />
           </a>
           <a
             href="#faq"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white/70 hover:text-white py-1 flex items-center justify-between"
+            className="text-white/70 hover:text-white py-3 flex items-center justify-between"
           >
             Preguntas frecuentes <ArrowUpRight className="w-4 h-4 opacity-50" />
           </a>
