@@ -11,6 +11,7 @@ Propuesta de plataforma digital para coaching fitness: un solo archivo `index.ht
 ## Identidad visual
 
 - **Marca:** YEFFITNES TRAINING. Símbolo: emblema **YF** (oro con contorno negro) en `brand/emblema-yf.png`.
+- **Logo grande e icono de app:** medallón (Y + águila + raíces en aro de bronce) en `brand/logo-medallon.png`; icono de app `brand/app-icon-512.png` y favicon `brand/favicon-64.png`. Exploraciones: `brand/logo-yf-oro.png`, `logo-yf-aguila.png`, `logo-yf-aguila-raices.png` (PNG raster; falta el vectorial del diseñador).
 - **Logos** (emblema + nombre, texto a trazos): `brand/logo-yeffitnes-training-oscuro.svg` y `brand/logo-yeffitnes-training-claro.svg`.
 - **Página de identidad:** `brand/identidad-visual.html`.
 
