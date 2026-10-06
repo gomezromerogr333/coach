@@ -1,4 +1,4 @@
-# Entorno — Propuesta comercial interactiva
+# Yeferson Coach — Propuesta comercial interactiva
 
 © 2026 Cristhian Gomez. Todos los derechos reservados. Documento confidencial.
 
