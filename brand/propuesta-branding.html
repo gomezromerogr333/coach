@@ -1,11 +1,11 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Branding YEFFITNES</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Manrope:wght@400..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* Libro de marca en una sola página: portada, las cinco opciones una por una, sistema y reglas. Oscuro por decisión de marca. */
-:root{--ink:#0A0910;--ink2:#14111C;--neon:#F7254B;--rose:#F2406B;--red:#D41A40;--garnet:#9C1535;--gold:#B08A3E;--gold-l:#CDB170;--gold-d:#8D6526;--gold-h:#FBE59B;--fg:#fff;--soft:rgba(255,255,255,.68);--faint:rgba(255,255,255,.46);--ld:rgba(255,255,255,.14);--pn:rgba(255,255,255,.035);--ok:#3EEB8C;--amber:#F5A623;--danger:#E8536B;
- --f-d:'Instrument Sans',system-ui,sans-serif;--f-b:Manrope,system-ui,sans-serif;--f-m:'IBM Plex Mono',ui-monospace,monospace;color-scheme:dark}
+/* Libro de marca en una sola página, en claro: perla de fondo, tarjetas blancas, rojo neón como acento y oro sombra para texto. */
+:root{--bg:#F6F6FA;--card:#FFFFFF;--tx:#12141B;--ink:#0A0910;--ink2:#14111C;--neon:#F7254B;--rose:#F2406B;--red:#D41A40;--garnet:#9C1535;--gold:#B08A3E;--gold-l:#CDB170;--gold-d:#8D6526;--gold-h:#FBE59B;--fg:#12141B;--soft:#4A5062;--faint:#656B80;--ld:#E1E3EC;--pn:#FFFFFF;--ok:#3EEB8C;--amber:#F5A623;--danger:#E8536B;
+ --f-d:'Instrument Sans',system-ui,sans-serif;--f-b:Manrope,system-ui,sans-serif;--f-m:'IBM Plex Mono',ui-monospace,monospace;color-scheme:light}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--f-b);-webkit-font-smoothing:antialiased;color:var(--fg);background:radial-gradient(900px 520px at 8% -6%,rgba(247,37,75,.22),transparent 60%),radial-gradient(700px 440px at 100% 4%,rgba(176,138,62,.13),transparent 60%),var(--ink);line-height:1.5}
+body{font-family:var(--f-b);-webkit-font-smoothing:antialiased;color:var(--fg);background:radial-gradient(900px 480px at 6% -8%,rgba(247,37,75,.07),transparent 60%),radial-gradient(700px 420px at 100% 2%,rgba(176,138,62,.10),transparent 60%),var(--bg);line-height:1.5}
 .w{max-width:1120px;margin-inline:auto;padding-inline:20px}
 h1,h2,h3,h4{font-family:var(--f-d);text-wrap:balance}
 .ey{font:12px var(--f-m);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-l)}
@@ -96,6 +96,49 @@ section.opt{padding-block:88px 8px;border-top:1px solid var(--ld);margin-top:72p
 footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);font:12px var(--f-m);color:var(--faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 :focus-visible{outline:2px solid var(--gold-l);outline-offset:3px}
 @media(max-width:560px){.cpanel{grid-template-columns:96px 1fr}.sws{grid-template-columns:repeat(3,1fr)}.apps{justify-content:center}}
+
+/* --- ajustes para fondo claro --- */
+.ey{color:var(--gold-d)}.pn h4,.sub{color:var(--gold-d)}
+.top a:hover,.top a:focus-visible{color:var(--tx)}
+.cover h1 em{background:linear-gradient(90deg,var(--neon),var(--gold) 70%,var(--gold-d));-webkit-background-clip:text;background-clip:text;color:transparent}
+.meta b{color:var(--tx)}
+.lu{background:#fff;color:var(--tx);box-shadow:0 1px 2px rgba(18,20,27,.04)}.lu:hover,.lu:focus-visible{border-color:var(--neon)}
+.pn{box-shadow:0 1px 2px rgba(18,20,27,.04)}
+.tag{}.t-def{background:#E3F6EC;color:#137A43}.t-dec{background:#FDE6EB;color:#B3123A}.t-nd{background:#FFF1D6;color:#8A5300}
+.pn li::before{background:var(--gold)}
+.tw{background:#fff}
+.v-Alta{color:#137A43;font-weight:600}.v-Media{color:#8A5300;font-weight:600}.v-Baja{color:#B3123A;font-weight:600}.v-Pendiente{color:var(--faint)}td.n{color:var(--soft)}
+.ol{color:#fff}
+.stg{box-shadow:0 1px 2px rgba(18,20,27,.04)}
+.dk{background:#EEF0F6;color:var(--tx)}.dk em{color:#656B80}
+.lt{background:#fff;color:var(--tx)}.lt em{color:#656B80}
+.rd{background:var(--neon)}.rd em{color:#fff}
+.tile{background:radial-gradient(circle at 50% 42%,rgba(247,37,75,.14),transparent 72%),#fff;box-shadow:0 0 0 1px #E1E3EC inset,0 6px 14px -8px rgba(18,20,27,.3)}
+.lock b{color:var(--tx)}.ld em{color:var(--gold-d)}.lw{color:var(--tx)}.lw em{color:var(--gold-d)}
+.lkw{background:#EEF0F6}
+.sw span,.sc i{box-shadow:0 0 0 1px rgba(18,20,27,.1) inset}
+.sw b{color:var(--soft)}
+.phone{border-color:#2B2E3A;background:#fff;box-shadow:0 26px 50px -26px rgba(18,20,27,.45),0 0 0 1px rgba(18,20,27,.12)}
+.scr{background:#fff;color:var(--tx)}
+.scr.login{background:radial-gradient(240px 210px at 50% 20%,rgba(247,37,75,.13),transparent 70%),#fff}
+.wm{color:var(--tx)}.wm2{color:var(--gold-d)}
+.inp{border-color:#D9DCE6;background:#F6F6FA;color:#656B80}
+.cta{color:#fff}
+.hh b{color:var(--tx)}.hs{color:#656B80}.hi{color:var(--tx)}
+.cd{background:#F6F6FA;border-color:#E1E3EC}.cd small{color:var(--gold-d)}.cd .t,.cd .n{color:var(--tx)}.cd .m{color:#656B80}.cd .n s{color:var(--neon)}
+.tab{border-top-color:#E1E3EC}.tab i{background:#E1E3EC}.tab i.on{background:var(--neon)}
+.cpanel{background:#fff;color:var(--tx);box-shadow:0 26px 50px -26px rgba(18,20,27,.35)}
+.side{background:#F6F6FA;border-right-color:#E1E3EC}.side b{color:var(--tx)}.side u{color:#656B80}.side u.on{background:#FDE6EB;color:#B3123A;font-weight:600}
+.mh{color:var(--tx)}.mh span{background:#FFF1D6;color:#8A5300}
+.kp div{border-color:#E1E3EC;color:#656B80}.kp b{color:var(--tx)}
+.rw{border-bottom-color:#E1E3EC;color:var(--tx)}.rw span{color:#656B80}
+.sc div{background:#fff}.sc b{color:var(--tx)}
+.ct div{background:#fff}.ct b{color:var(--tx)}
+.spec div{color:var(--tx)}.spec span{color:var(--faint)}
+.rl{background:#fff}.rl .st{background:#EEF0F6}.ok b{color:#137A43}.no b{color:#B3123A}
+.clr{background:#EEF0F6!important;border-color:var(--gold)}
+.cover p,.lead{color:var(--soft)}
+:focus-visible{outline-color:var(--gold-d)}
 </style></head><body>
 <div class="w">
 <header class="top"><span>YEFFITNES TRAINING · Propuesta de branding v7</span><nav><a href="#partida">Punto de partida</a><a href="#opciones">Opciones</a><a href="#sistema">Sistema</a><a href="#uso">Uso del logo</a><a href="#cierre">Siguientes pasos</a></nav></header>
@@ -109,7 +152,7 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 
 <section class="ch" id="partida"><div class="ey">Punto de partida</div><h2 class="ch-h">Solo se decide el logo. El resto ya está en pie.</h2>
 <p class="lead">La plataforma que recorriste ya tiene nombre, paleta, tipografía y diez pantallas. Esta propuesta cambia únicamente el símbolo y muestra cómo queda en lo existente.</p>
-<div class="two"><div class="pn"><h4>Ya definido</h4><ul><li>Nombre: <b style="color:#fff">YEFFITNES TRAINING</b> <span class="tag t-def">definido</span></li><li>Paleta de rojos neón y oros profundos sobre Ink <span class="tag t-def">definido</span></li><li>Tipografía: Instrument Sans, Manrope e IBM Plex Mono <span class="tag t-def">definido</span></li><li>Diez pantallas de la plataforma: app del cliente y panel del coach <span class="tag t-def">definido</span></li></ul></div>
+<div class="two"><div class="pn"><h4>Ya definido</h4><ul><li>Nombre: <b style="color:var(--tx)">YEFFITNES TRAINING</b> <span class="tag t-def">definido</span></li><li>Paleta de rojos neón y oros profundos sobre Ink <span class="tag t-def">definido</span></li><li>Tipografía: Instrument Sans, Manrope e IBM Plex Mono <span class="tag t-def">definido</span></li><li>Diez pantallas de la plataforma: app del cliente y panel del coach <span class="tag t-def">definido</span></li></ul></div>
 <div class="pn"><h4>Por decidir</h4><ul><li>Cuál de los cinco logos es el principal <span class="tag t-dec">cliente</span></li><li>Qué versión simplificada se usa en tamaños pequeños <span class="tag t-dec">cliente + diseñador</span></li><li>El tono de oro definitivo, que depende del logo elegido <span class="tag t-nd">no definido</span></li><li>Versión vectorial y versiones de un solo color <span class="tag t-nd">no definido</span></li></ul></div></div></section>
 
 <section class="ch" id="opciones"><div class="ey">Las cinco opciones</div><h2 class="ch-h">Mismo punto de partida, cinco niveles de detalle.</h2>
@@ -119,7 +162,7 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 
 <section class="opt" id="op-A"><div class="oh"><span class="ol">A</span><div><h2>YF en oro</h2><p>La Y y la F unidas en un solo trazo, con forma de alas.</p></div></div>
 <div class="g3">
-<div class="stg dk"><i class="lg lA" style="aspect-ratio:560/503;height:230px;" role="img" aria-label="Logo YF en oro"></i><em>Sobre Ink</em></div>
+<div class="stg dk"><i class="lg lA" style="aspect-ratio:560/503;height:230px;" role="img" aria-label="Logo YF en oro"></i><em>Sobre gris perlado</em></div>
 <div class="stg lt"><i class="lg lA" style="aspect-ratio:560/503;height:230px;" role="img" aria-label="Logo YF en oro"></i><em>Sobre blanco</em></div>
 <div class="stg rd"><i class="lg lA" style="aspect-ratio:560/503;height:230px;" role="img" aria-label="Logo YF en oro"></i><em>Sobre rojo neón</em></div></div>
 <div class="g2"><div class="pn"><h4>Con el nombre</h4><div><span class="lock ld"><i class="lg lA" style="aspect-ratio:560/503;height:36px;" role="img" aria-label="Logo YF en oro"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div><div class="lkw"><span class="lock lw"><i class="lg lA" style="aspect-ratio:560/503;height:36px;" role="img" aria-label="Logo YF en oro"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div></div>
@@ -135,7 +178,7 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 <div class="rw"><i></i>Camila R.<span>Plan de fuerza · sem. 6</span></div><div class="rw"><i></i>Andrés M.<span>Recomposición · sem. 2</span></div><div class="rw"><i></i>Laura P.<span>Nutrición · sem. 9</span></div></div></div></div>
 <div class="g3 fc"><div class="pn"><h4>Lo que funciona</h4><p>Es la más limpia y la que mejor se lee a 16 y 32 px. Ya vive en los paneles y en la propuesta, así que no exige rehacer nada.</p></div><div class="pn"><h4>A tener en cuenta</h4><p>Es la menos distintiva. Sin águila ni raíces cuenta menos historia y se parece a otros emblemas de alas.</p></div><div class="pn"><h4>Uso recomendado</h4><p>Paneles del cliente y del coach, favicon, marca de agua, botones y avatares.</p></div></div></section><section class="opt" id="op-B"><div class="oh"><span class="ol">B</span><div><h2>YF + águila</h2><p>El águila nace de la Y y el ala forma la F.</p></div></div>
 <div class="g3">
-<div class="stg dk"><i class="lg lB" style="aspect-ratio:560/502;height:230px;" role="img" aria-label="Logo YF + águila"></i><em>Sobre Ink</em></div>
+<div class="stg dk"><i class="lg lB" style="aspect-ratio:560/502;height:230px;" role="img" aria-label="Logo YF + águila"></i><em>Sobre gris perlado</em></div>
 <div class="stg lt"><i class="lg lB" style="aspect-ratio:560/502;height:230px;" role="img" aria-label="Logo YF + águila"></i><em>Sobre blanco</em></div>
 <div class="stg rd"><i class="lg lB" style="aspect-ratio:560/502;height:230px;" role="img" aria-label="Logo YF + águila"></i><em>Sobre rojo neón</em></div></div>
 <div class="g2"><div class="pn"><h4>Con el nombre</h4><div><span class="lock ld"><i class="lg lB" style="aspect-ratio:560/502;height:36px;" role="img" aria-label="Logo YF + águila"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div><div class="lkw"><span class="lock lw"><i class="lg lB" style="aspect-ratio:560/502;height:36px;" role="img" aria-label="Logo YF + águila"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div></div>
@@ -151,7 +194,7 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 <div class="rw"><i></i>Camila R.<span>Plan de fuerza · sem. 6</span></div><div class="rw"><i></i>Andrés M.<span>Recomposición · sem. 2</span></div><div class="rw"><i></i>Laura P.<span>Nutrición · sem. 9</span></div></div></div></div>
 <div class="g3 fc"><div class="pn"><h4>Lo que funciona</h4><p>Equilibra carácter y limpieza. Mantiene la silueta del YF y suma visión y foco con el águila.</p></div><div class="pn"><h4>A tener en cuenta</h4><p>La cabeza del águila pierde detalle por debajo de 32 px, así que el favicon pide una versión simplificada.</p></div><div class="pn"><h4>Uso recomendado</h4><p>Portada, login, redes, encabezado de la landing y firma de correos.</p></div></div></section><section class="opt" id="op-C"><div class="oh"><span class="ol">C</span><div><h2>YF + águila + raíces</h2><p>El YF con águila sobre un sistema de raíces gruesas y simétricas.</p></div></div>
 <div class="g3">
-<div class="stg dk"><i class="lg lC" style="aspect-ratio:560/543;height:230px;" role="img" aria-label="Logo YF + águila + raíces"></i><em>Sobre Ink</em></div>
+<div class="stg dk"><i class="lg lC" style="aspect-ratio:560/543;height:230px;" role="img" aria-label="Logo YF + águila + raíces"></i><em>Sobre gris perlado</em></div>
 <div class="stg lt"><i class="lg lC" style="aspect-ratio:560/543;height:230px;" role="img" aria-label="Logo YF + águila + raíces"></i><em>Sobre blanco</em></div>
 <div class="stg rd"><i class="lg lC" style="aspect-ratio:560/543;height:230px;" role="img" aria-label="Logo YF + águila + raíces"></i><em>Sobre rojo neón</em></div></div>
 <div class="g2"><div class="pn"><h4>Con el nombre</h4><div><span class="lock ld"><i class="lg lC" style="aspect-ratio:560/543;height:36px;" role="img" aria-label="Logo YF + águila + raíces"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div><div class="lkw"><span class="lock lw"><i class="lg lC" style="aspect-ratio:560/543;height:36px;" role="img" aria-label="Logo YF + águila + raíces"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div></div>
@@ -167,7 +210,7 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 <div class="rw"><i></i>Camila R.<span>Plan de fuerza · sem. 6</span></div><div class="rw"><i></i>Andrés M.<span>Recomposición · sem. 2</span></div><div class="rw"><i></i>Laura P.<span>Nutrición · sem. 9</span></div></div></div></div>
 <div class="g3 fc"><div class="pn"><h4>Lo que funciona</h4><p>La más narrativa: visión arriba, constancia y origen abajo. Muy memorable en portada y redes.</p></div><div class="pn"><h4>A tener en cuenta</h4><p>Las raíces se funden en tamaños chicos y ocupan casi un tercio de la altura. Pide una variante sin raíces para iconos.</p></div><div class="pn"><h4>Uso recomendado</h4><p>Portada, piezas impresas, banners, fondo de presentaciones.</p></div></div></section><section class="opt" id="op-D"><div class="oh"><span class="ol">D</span><div><h2>Medallón</h2><p>Y clásica con águila, raíces y hojas dentro de un aro de bronce, como un sello.</p></div></div>
 <div class="g3">
-<div class="stg dk"><i class="lg lD" style="aspect-ratio:640/647;height:230px;" role="img" aria-label="Logo Medallón"></i><em>Sobre Ink</em></div>
+<div class="stg dk"><i class="lg lD" style="aspect-ratio:640/647;height:230px;" role="img" aria-label="Logo Medallón"></i><em>Sobre gris perlado</em></div>
 <div class="stg lt"><i class="lg lD" style="aspect-ratio:640/647;height:230px;" role="img" aria-label="Logo Medallón"></i><em>Sobre blanco</em></div>
 <div class="stg rd"><i class="lg lD" style="aspect-ratio:640/647;height:230px;" role="img" aria-label="Logo Medallón"></i><em>Sobre rojo neón</em></div></div>
 <div class="g2"><div class="pn"><h4>Con el nombre</h4><div><span class="lock ld"><i class="lg lD" style="aspect-ratio:640/647;height:36px;" role="img" aria-label="Logo Medallón"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div><div class="lkw"><span class="lock lw"><i class="lg lD" style="aspect-ratio:640/647;height:36px;" role="img" aria-label="Logo Medallón"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div></div>
@@ -183,7 +226,7 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 <div class="rw"><i></i>Camila R.<span>Plan de fuerza · sem. 6</span></div><div class="rw"><i></i>Andrés M.<span>Recomposición · sem. 2</span></div><div class="rw"><i></i>Laura P.<span>Nutrición · sem. 9</span></div></div></div></div>
 <div class="g3 fc"><div class="pn"><h4>Lo que funciona</h4><p>Se siente como un sello premium y cierra solo: el aro lo hace funcionar muy bien como icono de app y avatar.</p></div><div class="pn"><h4>A tener en cuenta</h4><p>El bronce es más apagado y marrón que el oro de los otros, así que pide ajustar el oro de la paleta. Los detalles internos se pierden a tamaño pequeño.</p></div><div class="pn"><h4>Uso recomendado</h4><p>Icono de app, avatar de WhatsApp, sello en certificados y piezas impresas, login.</p></div></div></section><section class="opt" id="op-E"><div class="oh"><span class="ol">E</span><div><h2>YF + águila + raíces finas</h2><p>El YF con águila cuyas raíces suben por la Y y se abren en filamentos finos, con un brote.</p></div></div>
 <div class="g3">
-<div class="stg dk"><i class="lg lE" style="aspect-ratio:560/558;height:230px;" role="img" aria-label="Logo YF + águila + raíces finas"></i><em>Sobre Ink</em></div>
+<div class="stg dk"><i class="lg lE" style="aspect-ratio:560/558;height:230px;" role="img" aria-label="Logo YF + águila + raíces finas"></i><em>Sobre gris perlado</em></div>
 <div class="stg lt"><i class="lg lE" style="aspect-ratio:560/558;height:230px;" role="img" aria-label="Logo YF + águila + raíces finas"></i><em>Sobre blanco</em></div>
 <div class="stg rd"><i class="lg lE" style="aspect-ratio:560/558;height:230px;" role="img" aria-label="Logo YF + águila + raíces finas"></i><em>Sobre rojo neón</em></div></div>
 <div class="g2"><div class="pn"><h4>Con el nombre</h4><div><span class="lock ld"><i class="lg lE" style="aspect-ratio:560/558;height:36px;" role="img" aria-label="Logo YF + águila + raíces finas"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div><div class="lkw"><span class="lock lw"><i class="lg lE" style="aspect-ratio:560/558;height:36px;" role="img" aria-label="Logo YF + águila + raíces finas"></i><span><b>YEFFITNES</b><em>TRAINING</em></span></span></div></div>
@@ -200,9 +243,9 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 <div class="g3 fc"><div class="pn"><h4>Lo que funciona</h4><p>Es la más orgánica y la que cuenta mejor la idea de crecimiento. Las raíces finas dan movimiento y un brote deja una señal de futuro.</p></div><div class="pn"><h4>A tener en cuenta</h4><p>Los filamentos son muy delgados y se pierden en iconos y en impresión pequeña. Tiene más ruido visual que C y pide una versión simplificada.</p></div><div class="pn"><h4>Uso recomendado</h4><p>Portada, redes, fondo de presentaciones y piezas grandes.</p></div></div></section>
 
 <section class="ch" id="sistema" style="margin-top:72px;border-top:1px solid var(--ld)"><div class="ey">Sistema de marca</div><h2 class="ch-h">La paleta que acompaña a cualquiera de los cinco.</h2>
-<p class="lead">Rojo que marca el ritmo y oro que premia el progreso, sobre un fondo casi negro. Los rojos y los neutros no cambian con el logo; solo el oro se afina según la opción elegida.</p>
+<p class="lead">Rojo que marca el ritmo y oro que premia el progreso, sobre fondos claros y perlados. Los rojos y los neutros no cambian con el logo; solo el oro se afina según la opción elegida.</p>
 <div class="swr">
-<div class="sc"><i style="background:#0A0910"></i><div><b>Ink</b><code>#0A0910</code><small>Fondo oscuro</small></div></div>
+<div class="sc"><i style="background:#0A0910"></i><div><b>Ink</b><code>#0A0910</code><small>Texto y modo oscuro</small></div></div>
 <div class="sc"><i style="background:#F7254B"></i><div><b>Rojo neón</b><code>#F7254B</code><small>Resaltador y acción</small></div></div>
 <div class="sc"><i style="background:#F2406B"></i><div><b>Rosa carmín</b><code>#F2406B</code><small>Datos secundarios</small></div></div>
 <div class="sc"><i style="background:#D41A40"></i><div><b>Rojo vivo</b><code>#D41A40</code><small>Botones y degradados</small></div></div>
@@ -219,18 +262,18 @@ footer{margin-top:90px;padding-block:28px 56px;border-top:1px solid var(--ld);fo
 <div class="swr" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))"><div class="sc"><i style="background:#3EEB8C;height:48px"></i><div><b>Correcto</b><code>#3EEB8C</code></div></div><div class="sc"><i style="background:#F5A623;height:48px"></i><div><b>Atención</b><code>#F5A623</code></div></div><div class="sc"><i style="background:#E8536B;height:48px"></i><div><b>Alerta</b><code>#E8536B</code><small>Muy cercano al rojo de marca</small></div></div></div>
 <p class="fn" style="margin-top:12px;max-width:760px">El rojo de alerta se parece al rojo de marca. Está por decidir si las alertas pasan al ámbar para no confundir un error con un botón. <span class="tag t-nd">no definido</span></p>
 <div class="sub" style="margin-top:44px">Tipografía</div>
-<div class="spec"><div style="font:600 34px var(--f-d);letter-spacing:-.02em">Plan de fuerza, semana 6</div><span>Instrument Sans · titulares y nombre</span></div>
+<div class="spec"><div style="font:600 34px var(--f-d);letter-spacing:-.02em;color:var(--tx)">Plan de fuerza, semana 6</div><span>Instrument Sans · titulares y nombre</span></div>
 <div class="spec"><div style="font-size:18px;color:var(--soft)">Yeferson actualizó tu plan hace 3 días.</div><span>Manrope · lectura y botones</span></div>
 <div class="spec"><div style="font:20px var(--f-m)">82.4 kg · 71.0 cm · 09:30</div><span>IBM Plex Mono · datos y etiquetas</span></div>
-<div class="spec"><div><b style="font:700 22px var(--f-d);letter-spacing:.16em">YEFFITNES</b><br><span style="font:500 10px var(--f-m);letter-spacing:.9em;color:var(--gold-l);text-align:left;display:block;margin-top:7px">TRAINING</span></div><span>Nombre: Instrument Sans 700, tracking 0.16 em · apellido: IBM Plex Mono, tracking 0.9 em</span></div></section>
+<div class="spec"><div><b style="font:700 22px var(--f-d);letter-spacing:.16em;color:var(--tx)">YEFFITNES</b><br><span style="font:500 10px var(--f-m);letter-spacing:.9em;color:var(--gold-d);text-align:left;display:block;margin-top:7px">TRAINING</span></div><span>Nombre: Instrument Sans 700, tracking 0.16 em · apellido: IBM Plex Mono, tracking 0.9 em</span></div></section>
 
 <section class="ch" id="uso"><div class="ey">Uso del logo</div><h2 class="ch-h">Reglas para que el logo se vea siempre bien.</h2>
 <p class="lead">Estas reglas aplican a cualquiera de las cinco opciones. Los ejemplos usan la opción B. Los tamaños mínimos son una propuesta que se confirma cuando se elija el logo.</p>
-<div class="two"><div class="pn"><h4>Espacio libre</h4><p style="margin-bottom:16px">Alrededor del logo queda un margen mínimo igual a un cuarto de su altura. Nada entra en esa zona.</p><div class="clr" style="display:inline-block;background:var(--ink)"><i class="lg lB" style="height:110px;aspect-ratio:560/502"></i></div></div>
+<div class="two"><div class="pn"><h4>Espacio libre</h4><p style="margin-bottom:16px">Alrededor del logo queda un margen mínimo igual a un cuarto de su altura. Nada entra en esa zona.</p><div class="clr" style="display:inline-block"><i class="lg lB" style="height:110px;aspect-ratio:560/502"></i></div></div>
 <div class="pn"><h4>Tamaños mínimos (propuesta)</h4><ul><li>Símbolo YF (A o B): 24 px de alto en pantalla, 8 mm en impreso.</li><li>Logo con raíces (C o E): 64 px de alto; por debajo se usa el símbolo sin raíces.</li><li>Medallón (D): 40 px de diámetro; por debajo se usa solo el aro con la Y.</li><li>Favicon de 16 y 32 px: siempre la versión simplificada, nunca el logo completo.</li></ul></div></div>
 <div class="rules">
-<div class="rl ok"><div class="st"><i class="lg lB" style="height:100px;aspect-ratio:560/502"></i></div><p><b>Sí</b>Sobre Ink o blanco, con el margen completo.</p></div>
-<div class="rl ok"><div class="st" style="background:radial-gradient(circle at 50% 45%,rgba(247,37,75,.4),transparent 66%),var(--ink)"><i class="lg lB" style="height:100px;aspect-ratio:560/502"></i></div><p><b>Sí</b>Sobre Ink con el aura roja detrás.</p></div>
+<div class="rl ok"><div class="st"><i class="lg lB" style="height:100px;aspect-ratio:560/502"></i></div><p><b>Sí</b>Sobre gris perlado, con el margen completo.</p></div>
+<div class="rl ok"><div class="st" style="background:#fff"><i class="lg lB" style="height:100px;aspect-ratio:560/502"></i></div><p><b>Sí</b>Sobre blanco, con aire alrededor.</p></div>
 <div class="rl no"><div class="st"><i class="lg lB" style="height:100px;width:170px"></i></div><p><b>No</b>Estirar o deformar el logo.</p></div>
 <div class="rl no"><div class="st" style="background:#B08A3E"><i class="lg lB" style="height:100px;aspect-ratio:560/502"></i></div><p><b>No</b>Ponerlo sobre dorado: el oro se pierde.</p></div>
 <div class="rl no"><div class="st"><i class="lg lB" style="height:100px;aspect-ratio:560/502;transform:rotate(-18deg)"></i></div><p><b>No</b>Girarlo o inclinarlo.</p></div>

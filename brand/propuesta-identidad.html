@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Identidad YEFFITNES</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Manrope:wght@400..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0A0910;--ink2:#14111C;--neon:#F7254B;--rose:#F2406B;--red:#D41A40;--gold:#B08A3E;--gold-l:#CDB170;--gold-d:#8D6526;--soft:rgba(255,255,255,.64);--faint:rgba(255,255,255,.42);--ld:rgba(255,255,255,.14);color-scheme:dark}
+:root{--ink:#0A0910;--ink2:#14111C;--neon:#F7254B;--rose:#F2406B;--red:#D41A40;--gold:#B08A3E;--gold-l:#CDB170;--gold-d:#8D6526;--soft:rgba(255,255,255,.64);--faint:rgba(255,255,255,.42);--ld:rgba(255,255,255,.14);color-scheme:light}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:#fff;background:radial-gradient(900px 520px at 10% -8%,rgba(247,37,75,.24),transparent 60%),radial-gradient(700px 440px at 100% 6%,rgba(176,138,62,.14),transparent 60%),var(--ink);min-height:100vh}
+body{font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:#12141B;background:radial-gradient(900px 480px at 6% -8%,rgba(247,37,75,.07),transparent 60%),radial-gradient(700px 420px at 100% 2%,rgba(176,138,62,.10),transparent 60%),#F6F6FA;min-height:100vh}
 .w{max-width:1080px;margin:0 auto;padding:0 20px}
 .mono{font-family:'IBM Plex Mono',monospace}
 .top{display:flex;justify-content:space-between;gap:12px;padding:22px 0;border-bottom:1px solid var(--ld);font:12px 'IBM Plex Mono';color:var(--faint)}
@@ -76,6 +76,36 @@ footer{margin-top:56px;padding:26px 0 48px;border-top:1px solid var(--ld);font:1
 @media(max-width:1000px){.mocks{grid-template-columns:auto auto}.col{grid-column:1/-1}.detail{grid-template-columns:1fr}}
 @media(max-width:560px){.mocks{grid-template-columns:1fr;justify-items:center}.col{width:100%}.hs-grid{grid-template-columns:repeat(4,1fr)}.hs-grid .ph,.hs-grid .tile{width:100%;aspect-ratio:1;height:auto}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* --- claro --- */
+:root{--soft:#4A5062;--faint:#656B80;--ld:#E1E3EC}
+.top a{color:#656B80}
+.ey,.dc b,.cd small{color:#8D6526}
+h1{color:#12141B}h1 em{background:linear-gradient(90deg,#F7254B,#B08A3E 70%,#8D6526);-webkit-background-clip:text;background-clip:text;color:transparent}
+.opt{background:#fff;box-shadow:0 1px 2px rgba(18,20,27,.04)}.opt:hover{border-color:#B9BDCB}
+.opt[aria-checked=true]{background:#FFF5F7;box-shadow:0 0 0 1px var(--neon),0 14px 30px -16px rgba(247,37,75,.45)}
+.opt .stage{background:radial-gradient(circle at 50% 44%,rgba(247,37,75,.10),transparent 66%),#F6F6FA}
+.opt .l{color:#12141B}.opt .l span{color:#656B80}
+.chk{border-color:#9AA0B3}
+.badge{color:#B3123A;background:#FDE6EB}
+.dc{background:#fff}.dc h3{color:#12141B}.dc p{color:#4A5062}
+.phone{border-color:#2B2E3A;background:#fff;box-shadow:0 26px 50px -26px rgba(18,20,27,.45),0 0 0 1px rgba(18,20,27,.12)}
+.scr{background:#fff;color:#12141B}.login{background:radial-gradient(240px 210px at 50% 20%,rgba(247,37,75,.13),transparent 70%),#fff}
+.wm{color:#12141B}.wm2{color:#8D6526}
+.inp{border-color:#D9DCE6;background:#F6F6FA;color:#656B80}
+.hh b{color:#12141B}.hs{color:#656B80}.hi{color:#12141B}.home{background:#fff}
+.cd{background:#F6F6FA;border-color:#E1E3EC}.cd .t,.cd .n{color:#12141B}.cd .m{color:#656B80}.cd .n s{color:#F7254B}
+.tab{border-top-color:#E1E3EC}.tab i{background:#E1E3EC}.tab i.on{background:#F7254B}
+.pn{background:#fff}.pn .cap{color:#656B80}
+.tile{background:radial-gradient(circle at 50% 42%,rgba(247,37,75,.14),transparent 72%),#fff;box-shadow:0 0 0 1px #E1E3EC inset,0 6px 14px -8px rgba(18,20,27,.3)}
+.sizes div{color:#656B80}
+.hs-grid div{color:#4A5062}.hs-grid .ph{background:#E1E3EC}
+.brw{background:#DCDFE8}.btab{background:#fff;color:#12141B}.btab .tile{box-shadow:none}
+.wa{background:#EAF6EF;color:#12141B}.wa span{color:#4A5062}.wa .av{background:radial-gradient(circle at 50% 42%,rgba(247,37,75,.14),transparent 72%),#fff;box-shadow:0 0 0 1px #E1E3EC inset}
+.lk b{color:#12141B}.lkd span{color:#8D6526}.lkw{background:#EEF0F6;color:#12141B}.lkw span{color:#8D6526}
+.pick{background:linear-gradient(135deg,rgba(247,37,75,.07),rgba(176,138,62,.09)),#fff;border-color:#E1E3EC}
+.pick h3{color:#12141B}.pick p{color:#4A5062}
+.note,footer,.top{color:#656B80}
 </style></head><body><div class="w">
 <div class="top"><span>YEFFITNES TRAINING</span><span>Propuesta de identidad visual · para elegir</span></div>
 <div class="ey">Paso 1 · el logo de tu plataforma</div>
