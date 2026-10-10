@@ -10,7 +10,7 @@ Propuesta de plataforma digital para coaching fitness: un solo archivo `index.ht
 
 ## Identidad visual
 
-- **Marca:** YEFFITNES TRAINING. Símbolo: emblema **YF** (oro con contorno negro) en `brand/emblema-yf.png`.
+- **Marca:** YEFFITNES TRAINING. Símbolo: emblema **YF** (oro 3D, sin contorno) en `brand/emblema-yf.png`.
 - **Logos** (emblema + nombre, texto a trazos): `brand/logo-yeffitnes-training-oscuro.svg` y `brand/logo-yeffitnes-training-claro.svg`.
 - **Página de identidad:** `brand/identidad-visual.html`.
 
@@ -23,4 +23,4 @@ Propuesta de plataforma digital para coaching fitness: un solo archivo `index.ht
 | Oro (logro, detalles) | `--pearl` / `--gold-deep` | `#CDB170` / `#8D6526` |
 
 Neutros (`--ink`, `--surface`, `--text`, líneas) y colores de estado (verde, ámbar, `--danger`) sin cambios.
-El emblema se incrusta como WebP optimizado (360 px) una vez por documento y se reutiliza con `<use href="#yfe">`.
+El emblema se incrusta como WebP optimizado (360 px de ancho, relación 1.11) una vez por documento y se reutiliza con `<use href="#yfe">`.
